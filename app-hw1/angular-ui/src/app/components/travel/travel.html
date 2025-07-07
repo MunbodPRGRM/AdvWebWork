@@ -1,1 +1,63 @@
-<p>travel works!</p>
+<mat-toolbar color="primary">
+    <button mat-flat-icon [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    <span style="margin-left: 15px;">My Website</span>
+    <span class="spacer"></span>
+    <mat-slide-toggle></mat-slide-toggle>
+</mat-toolbar>
+
+<div class="highlight-box">
+    <h1 style="margin-bottom: 1px;">ประเทศไทย</h1>
+    <h2 style="margin-top: 5px;">สถานที่ท่องเที่ยวในประเทศไทย</h2>
+    <input matInput type="text" class="search-box" placeholder="ค้นหาสถานที่ท่องเที่ยว...">
+</div>
+
+<div class="button-place">
+    <mat-card-actions class="button-gap">
+        <button mat-flat-button color="primary" matBadge="10">
+            <mat-icon>public</mat-icon> ทั้งหมด
+        </button>
+        <button mat-stroked-button color="primary" matBadge="3">
+            <mat-icon>water</mat-icon> ชายหาด
+        </button>
+        <button mat-stroked-button color="primary" matBadge="2">
+            <mat-icon>landscape</mat-icon> ภูเขา
+        </button>
+        <button mat-stroked-button color="primary" matBadge="5">
+            <mat-icon>apartment</mat-icon> เมือง
+        </button>
+        <button mat-stroked-button color="primary" matBadge="4">
+            <mat-icon>nature</mat-icon> ธรรมชาติ
+        </button>
+    </mat-card-actions>
+</div>
+
+<div class="content-format">
+    <div class="card-format" *ngFor="let landmark of landmarks">
+        <mat-card>
+            <mat-card-header>
+                <img [src]="landmark.url" alt="{{ landmark.name }}" matTooltip="{{ landmark.name}}"
+                    matTooltipPosition="above">
+            </mat-card-header>
+            <mat-card-content>
+                <h2>{{ landmark.name }}</h2>
+                <p>{{ landmark.detail }}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+
+<mat-paginator></mat-paginator>
+
+<div class="footer-box">
+    <h3 style="margin-bottom: 1px;">My Website</h3>
+    <h4 style="margin-top: 5px;">จัดทำโดย ณฐกฤต นาสุวรรณ</h4>
+    <div>
+        <button mat-button>เกี่ยวกับเรา</button>
+        <button mat-button>ติดต่อเรา</button>
+        <button mat-button>นโยบายความเป็นส่วนตัว</button>
+    </div>
+</div>
