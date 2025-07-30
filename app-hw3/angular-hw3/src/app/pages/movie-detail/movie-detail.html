@@ -1,0 +1,90 @@
+<!-- <p>movie-detail works!</p> -->
+
+<div class="wrapper">
+    <div style="margin-top: 50px;">
+        <span>
+            <img src="images/back.png" width="30px" height="30px">
+            <button
+                style="font-size: x-large; font-weight: bold; color: #F5C518; margin-top: -23px; margin-left: -20px;"
+                mat-flat-button (click)="goBack()">Back</button>
+        </span>
+        <div class="detail-container">
+            <mat-card class="card" *ngIf="movie">
+                <div class="head-component">
+                    <div>
+                        <h1>{{ movie.title }}</h1>
+                        <div class="duration-list">
+                            <p *ngFor="let item of movie.duration; let isLast = last">
+                                {{ item }}
+                                <span *ngIf="!isLast" class="dot-spacing"> • </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-header">
+                        <div>IMDb RATING</div>
+                        <div>YOUR RATING</div>
+                        <div>POPULARITY</div>
+                    </div>
+                </div>
+
+                <!-- <img src="images/ribbon.png" class="ribbon-image"> -->
+                <div class="imgVdoBox">
+                    <img [src]="movie.posterUrl" width="278" height="414">
+
+                    <iframe *ngIf="videoUrl" [src]="videoUrl" width="737" height="414" frameborder="0" allowfullscreen>
+                    </iframe>
+                    <div>
+                        <div class="info-card">
+                            <mat-icon>video_library</mat-icon>
+                            Videos
+                        </div>
+
+                        <div class="info-card" style="margin-top: 10px;">
+                            <mat-icon>photo_library</mat-icon>
+                            Photos
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tag-button">
+                    <div *ngFor="let item of movie.tags">
+                        <button mat-stroked-button>{{ item }}</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 style="margin-bottom: 20px;">{{ movie.detail }}</h4>
+
+                    <hr class="line" />
+                    <h4>
+                        Director
+                        <span style="margin-right: 20px;"></span>
+                        <a href="" class="person-link">{{ movie.director }}</a>
+                    </h4>
+
+                    <hr class="line" />
+                    <h4>
+                        Writers
+                        <span style="margin-right: 20px;"></span>
+                        <span *ngFor="let item of movie.writer; let i = index; let isLast = last">
+                            <a href="" class="person-link">{{ item }} </a>
+                            <span *ngIf="!isLast" class="dot-spacing"> • </span>
+                        </span>
+                    </h4>
+
+                    <hr class="line" />
+                    <h4>
+                        Stars
+                        <span style="margin-right: 20px;"></span>
+                        <span *ngFor="let item of movie.stars; let i = index; let isLast = last">
+                            <a href="" class="person-link">{{ item }} </a>
+                            <span *ngIf="!isLast" class="dot-spacing"> • </span>
+                        </span>
+                    </h4>
+
+                    <hr class="line" style="margin-bottom: 20px;">
+                </div>
+            </mat-card>
+        </div>
+    </div>
+</div>

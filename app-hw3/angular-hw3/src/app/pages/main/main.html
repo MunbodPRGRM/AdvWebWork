@@ -1,0 +1,47 @@
+<!-- <p>main works!</p> -->
+
+<div class="wrapper">
+    <div style="margin-top: 50px;">
+        <h2 class="section-title"><span style="color: #F5C518;">┃</span>10 on IMDb this week</h2>
+        <div class="top10-container">
+            <mat-card class="card" *ngFor="let item of top10">
+                <img src="images/ribbon.png" class="ribbon-image">
+
+                <a [routerLink]="['/movie', item.id]">
+                    <img [src]="item.posterUrl" width="200px" height="300px">
+                </a>
+
+                <div class="rating">
+                    <img src="images/star.png" width="15">
+                    {{ item.rating }}
+                    <span style="margin-left: 20px;">
+                        <img src="images/starBlue.png" width="15">
+                    </span>
+                </div>
+
+                <p class="title">{{ item.rank }}. {{ item.title }}</p>
+
+                <div class="spacer"></div>
+
+                <div class="button-location">
+                    <button mat-raised-button
+                        style="width: 150px;color: #438DEF; background-color: #30353C; border-radius: 50px;">+
+                        Watchlist</button>
+                    <button mat-flat-button>Trailer</button>
+                </div>
+            </mat-card>
+        </div>
+
+        <div style="margin-top: 100px;">
+            <h2 class="section-title"><span style="color: #F5C518;">┃</span>Born today</h2>
+            <p style="margin-top: -25px;">People born on December 11</p>
+            <div class="bornToday-layout">
+                <div *ngFor="let item of bornToday">
+                    <img class="bornToday-img" [src]="item.photoUrl" width="200px" height="200px">
+                    <h3>{{ item.name }}</h3>
+                    <p>{{ item.age }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

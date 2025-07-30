@@ -1,0 +1,107 @@
+.top10-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #1A1A1A;
+  transition: transform 0.2s ease;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* สำคัญ! ให้ลูกซ้อนตามกรอบการ์ด */
+  overflow: hidden;    /* กัน Ribbon ล้น */
+}
+
+.ribbon-image {
+  position: absolute;
+  margin-top: -5px;
+  margin-left: -11px;
+  width: 50px;    /* ปรับขนาดตามภาพจริง */
+  height: auto;   /* รักษาอัตราส่วน */
+  z-index: 2;     /* ให้ซ้อนบนโปสเตอร์ */
+  opacity: 0.7;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.ribbon-image:hover {
+    transform: scale(1.2);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card p {
+  padding: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.rating {
+  margin-top: 10px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.actions {
+  margin-top: 0px;
+}
+
+.actions button {
+  margin: 5px;
+}
+
+.button-location {
+    text-align: center;
+}
+
+.watchlist-button {
+    color: #438DEF; 
+    background-color: #30353C; 
+    border-radius: 50px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;     /* เรียงหัวเรื่อง + การ์ดจากบนลงล่าง */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.section-title {
+  text-align: left;     /* จัดข้อความไปทางซ้าย */
+  margin: 0 auto 30px;  /* ข้างบน 0, ข้างล่าง 30px */
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;       /* หรือสีตามธีม */
+}
+
+.bornToday-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.bornToday-img {
+    border-radius: 100%;
+}
