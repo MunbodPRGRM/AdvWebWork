@@ -16,18 +16,54 @@
                         <div class="duration-list">
                             <p *ngFor="let item of movie.duration; let isLast = last">
                                 {{ item }}
-                                <span *ngIf="!isLast" class="dot-spacing"> • </span>
+                                <span *ngIf="!isLast" class="dot-spacing1"> • </span>
                             </p>
                         </div>
                     </div>
                     <div class="right-header">
-                        <div>IMDb RATING</div>
-                        <div>YOUR RATING</div>
-                        <div>POPULARITY</div>
+                        <div>
+                            IMDb RATING
+                            <div style="margin-top: 5px; margin-left: -14px;">
+                                <button mat-flat-button class="rating-btn">
+                                    <div class="rating-display">
+                                        <img src="images/star.png" width="25" height="25" style="margin-top: 20px;">
+                                        <h2>{{ movie.rating }}</h2>
+                                        <span>
+                                            <h3>/ 10</h3>
+                                        </span>
+                                    </div>
+                                    <div class="rating-people">
+                                        {{ movie.numPeopleRating }}
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            YOUR RATING
+                            <div style="margin-top: 5px; margin-left: -14px;">
+                                <button mat-flat-button class="rating-btn">
+                                    <div class="rating-display">
+                                        <img src="images/starBlue.png" width="25" height="25" style="margin-top: 20px;">
+                                        <h1 style="margin-top: 44px; color: #4879B8;">Rate</h1>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            POPULARITY
+                            <div style="margin-top: 5px; margin-left: px;">
+                                <button mat-flat-button class="rating-btn">
+                                    <div class="rating-display">
+                                        <img [src]="movie.graph" width="25" height="25" style="margin-top: 20px;">
+                                        <h2 style="margin-top: 35px; margin-left: 10px;">{{ movie.rank }}</h2>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- <img src="images/ribbon.png" class="ribbon-image"> -->
+                <img src="images/ribbon.png" class="ribbon-image">
                 <div class="imgVdoBox">
                     <img [src]="movie.posterUrl" width="278" height="414">
 
@@ -52,37 +88,83 @@
                     </div>
                 </div>
 
-                <div>
-                    <h4 style="margin-bottom: 20px;">{{ movie.detail }}</h4>
+                <div style="display: flex; flex-direction: row;">
+                    <div class="detail-box">
+                        <h4 style="margin-bottom: 20px;">{{ movie.detail }}</h4>
 
-                    <hr class="line" />
-                    <h4>
-                        Director
-                        <span style="margin-right: 20px;"></span>
-                        <a href="" class="person-link">{{ movie.director }}</a>
-                    </h4>
+                        <div *ngIf="movie.director || movie.creator">
+                            <div>
+                                <hr class="line" />
+                                <h4 *ngIf="movie.director">
+                                    Director
+                                    <span style="margin-right: 20px;"></span>
+                                    <a [routerLink]="['/person', movie.director.directorId]" class="person-link">{{
+                                        movie.director.directorName }}</a>
+                                </h4>
+                                <h4 *ngIf="movie.creator">
+                                    Creator
+                                    <span style="margin-right: 20px;"></span>
+                                    <a [routerLink]="['/person', movie.creator.creatorId]" class="person-link">{{
+                                        movie.creator.creatorName }}</a>
+                                </h4>
+                            </div>
+                        </div>
 
-                    <hr class="line" />
-                    <h4>
-                        Writers
-                        <span style="margin-right: 20px;"></span>
-                        <span *ngFor="let item of movie.writer; let i = index; let isLast = last">
-                            <a href="" class="person-link">{{ item }} </a>
-                            <span *ngIf="!isLast" class="dot-spacing"> • </span>
-                        </span>
-                    </h4>
+                        <div *ngIf="movie.writer">
+                            <hr class="line" />
+                            <h4>
+                                Writers
+                                <span style="margin-right: 20px;"></span>
+                                <span *ngFor="let name of movie.writer.writerName; let i = index; let isLast = last">
+                                    <a [routerLink]="['/person', movie.writer.writerId[i]]" class="person-link">{{ name
+                                        }}
+                                    </a>
+                                    <span *ngIf="!isLast" class="dot-spacing2"> • </span>
+                                </span>
+                            </h4>
+                        </div>
 
-                    <hr class="line" />
-                    <h4>
-                        Stars
-                        <span style="margin-right: 20px;"></span>
-                        <span *ngFor="let item of movie.stars; let i = index; let isLast = last">
-                            <a href="" class="person-link">{{ item }} </a>
-                            <span *ngIf="!isLast" class="dot-spacing"> • </span>
-                        </span>
-                    </h4>
+                        <div *ngIf="movie.stars">
+                            <hr class="line" />
+                            <h4>
+                                Stars
+                                <span style="margin-right: 20px;"></span>
+                                <span *ngFor="let name of movie.stars.starsName; let i = index; let isLast = last">
+                                    <a [routerLink]="['/person', movie.stars.starsId[i]]" class="person-link">{{ name }}
+                                    </a>
+                                    <span *ngIf="!isLast" class="dot-spacing2"> • </span>
+                                </span>
+                            </h4>
+                        </div>
 
-                    <hr class="line" style="margin-bottom: 20px;">
+                        <hr class="line" />
+                        <h4>
+                            <a href="" class="person-link">
+                                <img src="/images/imdbpro.png" width="60px">
+                                <span style="margin-left: 10px;">See production info at IMDbPro</span>px
+                            </a>
+                        </h4>
+
+                        <hr class="line" style="margin-bottom: 20px;">
+                    </div>
+                    <div class="action-container">
+                        <div style="display: flex;">
+                            <button mat-raised-button class="watchlist-button"
+                                style="background-color: #EEC017; color: black;">
+                                <mat-icon>add</mat-icon>
+                                Add to Watchlist
+                            </button>
+                            <button mat-flat-button class="small-button"
+                                style="background-color: #EEC017; color: black;">
+                                <mat-icon>arrow_drop_down</mat-icon>
+                            </button>
+                        </div>
+
+                        <button mat-stroked-button class="mark-watched" style="color: #4879B8;">
+                            <mat-icon>visibility</mat-icon>
+                            Mark as watched
+                        </button>
+                    </div>
                 </div>
             </mat-card>
         </div>

@@ -1,1 +1,103 @@
-<p>people works!</p>
+<div class="wrapper">
+    <div style="margin-top: 50px;">
+        <span>
+            <img src="images/back.png" width="30px" height="30px">
+            <button
+                style="font-size: x-large; font-weight: bold; color: #F5C518; margin-top: -23px; margin-left: -20px;"
+                mat-flat-button (click)="goBack()">Back</button>
+        </span>
+        <div class="detail-container">
+            <mat-card class="card" *ngIf="actor">
+                <div class="head-component">
+                    <div>
+                        <h1>{{ actor.name }}</h1>
+                        <div class="duration-list">
+                            <p *ngFor="let item of actor.title; let isLast = last">
+                                {{ item }}
+                                <span *ngIf="!isLast" class="dot-spacing1"> • </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-header">
+                        <div style="display: flex; flex-direction: row;">
+                            <div style="color: #B0B4BA;">
+                                <button mat-flat-button>
+                                    <h3>IMDbPro</h3>
+                                    <h2 style="letter-spacing: 3px; margin-left: -45px; margin-top: -20px;">Starmeter
+                                    </h2>
+                                </button>
+                            </div>
+
+                            <div style="margin-top: 5px; margin-left: -14px;">
+                                <button mat-flat-button class="rating-btn">
+                                    <div class="rating-display">
+                                        <img *ngIf="actor.starmeter1" [src]="actor.starmeter1" width="25" height="25"
+                                            style="margin-top: -5px; margin-left: -10px; margin-right: 10px;">
+                                        <h2>{{ actor.starmeter2 }}</h2>
+                                    </div>
+                                    <div class="rating-people">
+                                        {{ actor.numPeopleRating }}
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <img src="images/ribbon.png" class="ribbon-image"> -->
+                <div class="imgVdoBox">
+                    <img [src]="actor.photoUrl" width="278" height="414" class="image-cover">
+
+                    <iframe *ngIf="personVideoUrl" [src]="personVideoUrl" width="737" height="414" frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+                    <div>
+                        <div class="info-card">
+                            <mat-icon>video_library</mat-icon>
+                            Videos
+                        </div>
+
+                        <div class="info-card" style="margin-top: 10px;">
+                            <mat-icon>photo_library</mat-icon>
+                            Photos
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tag-button">
+                    <div *ngFor="let item of actor.tags">
+                        <button mat-stroked-button>{{ item }}</button>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: row;">
+                    <div class="detail-box">
+                        <p style="margin-bottom: 20px; line-height: 25px;" [innerHTML]="actor.detail"></p>
+
+                        <hr class="line" />
+                        <h4>
+                            More At IMDbPro
+                            <span style="margin-right: 20px;"></span>
+                            <span *ngFor="let item of actor.moreAt; let i = index; let isLast = last">
+                                <span><a href="" class="person-link">{{ item }} </a></span>
+                                <span *ngIf="!isLast" class="dot-spacing2"> • </span>
+                            </span>
+                        </h4>
+
+                        <hr class="line" style="margin-bottom: 20px;">
+                    </div>
+
+                    <div class="action-container">
+                        <div style="display: flex;">
+                            <button mat-raised-button class="watchlist-button"
+                                style="background-color: #EEC017; color: black;">
+                                <mat-icon>add</mat-icon>
+                                Add to List
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+</div>

@@ -35,7 +35,7 @@
 
 .ribbon-image {
   position: absolute;
-  margin-top: -5px;
+  margin-top: 95px;
   margin-left: -11px;
   width: 50px;    /* ปรับขนาดตามภาพจริง */
   height: auto;   /* รักษาอัตราส่วน */
@@ -103,13 +103,18 @@ iframe {
   border: none;
   height: 1px;        // ความหนา
   background: #494949;   // สีขีด
-  width: 65%;        // ยาวเต็มความกว้าง
+  width: 100%;        // ยาวเต็มความกว้าง
   margin-top: -10px;
   margin-bottom: -10px;
   margin-left: 0;
 }
 
-.dot-spacing {
+.dot-spacing1 {
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+.dot-spacing2 {
     margin-left: 5px;
     margin-right: 5px;
     font-size: 10px;
@@ -128,8 +133,87 @@ iframe {
 .right-header {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 15px;
     margin-left: auto;    /* ดันไปชิดขวา */
     margin-top: 20px;
     font-size: 12px;
+}
+
+.rating-btn {
+  display: inline-flex;       // ✅ ให้ปุ่มหดตามเนื้อหา
+  flex-direction: column;     // ✅ จัดแนว column ถ้าอยากให้มี 2 บรรทัด
+  align-items: center;        // ✅ จัดกลาง
+  min-width: auto;            // ✅ ยกเลิก min-width ของ Material
+  padding: 8px 12px;          // ✅ ปรับ padding ตามต้องการ
+  border-radius: 20px;
+  margin-top: -8px;
+}
+
+.rating-display {
+  display: flex;
+  align-items: center;
+  gap: 5px;                   // ระยะห่างระหว่างรูปกับตัวเลข
+}
+
+.rating-people {
+  font-size: 12px;
+  margin-top: -12px;
+  margin-left: 2px;
+}
+
+.detail-box {
+  width: 800px;
+}
+
+.image-cover {
+    object-fit: cover;
+}
+
+.action-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  margin-left: 80px;
+  margin-top: 35px;
+}
+
+.watchlist-button {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: #f5c518;
+  color: #000;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 12px;
+  min-width: 284px;
+
+  .count {
+    margin-left: auto;
+    font-size: 12px;
+    color: #333;
+  }
+}
+
+.mark-watched {
+  justify-content: left;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #4879B8;
+  background-color: #444;
+  min-width: 358px;
+  font-size: 14px;
+  border: none;
+}
+
+.small-button {
+  width: 30px;
+  height: 40px;
+  background-color: #EEC017;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: 10px;
 }

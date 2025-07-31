@@ -19,7 +19,9 @@
                     </span>
                 </div>
 
-                <p class="title">{{ item.rank }}. {{ item.title }}</p>
+                <a [routerLink]="['/movie', item.id]" class="link-decoration">
+                    <p class="title">{{ item.rank }}. {{ item.title }}</p>
+                </a>
 
                 <div class="spacer"></div>
 
@@ -37,8 +39,11 @@
             <p style="margin-top: -25px;">People born on December 11</p>
             <div class="bornToday-layout">
                 <div *ngFor="let item of bornToday">
-                    <img class="bornToday-img" [src]="item.photoUrl" width="200px" height="200px">
-                    <h3>{{ item.name }}</h3>
+                    <a [routerLink]="['/person', item.id]" class="link-decoration">
+                        <img class="bornToday-img image-cover" [src]="item.photoUrl" width="200px" height="200px">
+                        <h3>{{ item.name }}</h3>
+                    </a>
+
                     <p>{{ item.age }}</p>
                 </div>
             </div>

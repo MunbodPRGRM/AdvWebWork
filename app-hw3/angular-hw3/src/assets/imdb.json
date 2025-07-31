@@ -2,85 +2,533 @@
     "top10": [
         {
             "rank": 1, 
+            "graph": "/images/greengraph.png", 
             "id": "a3ur5m", 
             "title": "Happy Gilmore 2", 
             "duration": [2025, "PG-13", "1h 54m"],
             "rating": 6.3, 
             "numPeopleRating": "43K",
             "tags": ["High-Concept Comedy", "Raunchy Comedy", "Slapstick", "Comedy", "Sport"],
-            "director": "Kyle Newacheck", 
-            "writer": ["Tim Herlihy", "Adam Sandler"],
-            "stars": ["Adam Sandler", "Julie Bowen", "Christopher McDonald"],  
+            "director": {
+                "directorName": "Kyle Newacheck", 
+                "directorId": "kl4NwAchk1"
+            }, 
+            "writer": {
+                "writerName": ["Tim Herlihy", "Adam Sandler"], 
+                "writerId": ["timHlH", "adSler"]
+            },
+            "stars": {
+                "starsName": ["Adam Sandler", "Julie Bowen", "Christopher McDonald"], 
+                "starsId": ["adSler", "jleBwn", "chTpHMcDn"]
+            },  
             "posterUrl": "https://i.ebayimg.com/images/g/kcoAAOSwgJVoVss7/s-l400.jpg", 
             "detail": "Revisit Happy Gilmore's golf career after his win in the Tour Championship.", 
             "videoUrl": "https://www.youtube.com/embed/YKzRPFvky9Y?si=cX7ILZiCTZxMRVrX"
         }, 
         {
             "rank": 2, 
+            "graph": "/images/greengraph.png", 
             "id": "kkok345fy", 
             "title": "The Fantastic Four: First Steps", 
+            "duration": [2025, "PG-13", "1h 55m"],
             "rating": 7.5, 
-            "posterUrl": "https://m.media-amazon.com/images/M/MV5BOGM5MzA3MDAtYmEwMi00ZDNiLTg4MDgtMTZjOTc0ZGMyNTIwXkEyXkFqcGc@._V1_.jpg"
+            "numPeopleRating": "68k",
+            "tags": ["Space Sci-Fi", "Superhero", "Action", "Adventure", "Sci-Fi"],
+            "director": {
+                "directorName": "Matt Shakman", 
+                "directorId": "mttSkMn"
+            },
+            "writer": {
+                "writerName": ["Josh Friedman", "Eric Pearson", "Jeff Kaplan"], 
+                "writerId": ["jshFriMn", "ericPsn", "jffKpLn"]
+            }, 
+            "stars": {
+                "starsName": ["Pedro Pascal", "Vanessa Kirby", "Ebon Moss-Bachrach"], 
+                "starsId": ["pdroPsCl", "vnsKirBy", "ebNmSSbchR"]
+            }, 
+            "posterUrl": "https://m.media-amazon.com/images/M/MV5BOGM5MzA3MDAtYmEwMi00ZDNiLTg4MDgtMTZjOTc0ZGMyNTIwXkEyXkFqcGc@._V1_.jpg",
+            "detail": "Forced to balance their roles as heroes with the strength of their family bond, the Fantastic Four must defend Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.",
+            "videoUrl": "https://www.youtube.com/embed/18QQWa5MEcs?si=WRBrSi8FYZqu0Ioj"
         },
         {
             "rank": 3, 
+            "graph": "/images/arrow-right.png", 
             "id": "asefc45u", 
             "title": "Untamed", 
+            "duration": ["TV Mini Series", "2025–", "TV-MA", "50m"], 
             "rating": 7.2, 
-            "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRV9ILzkKi3JiN7I7V08tU13RdW8yOGhnY6g&s"
+            "numPeopleRating": "27K", 
+            "tags": ["Crime", "Drama", "Mystery", "Thriller"], 
+            "director": "", 
+            "writer": "", 
+            "stars": {
+                "starsName": ["Eric Bana", "Sam Neill", "Rosemarie DeWitt"], 
+                "starsId": ["ercBN", "samNill", "rseMrDwtt"]
+            }, 
+            "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRV9ILzkKi3JiN7I7V08tU13RdW8yOGhnY6g&s", 
+            "detail": "A National Parks Service agent investigates a brutal death at Yosemite National Park.", 
+            "videoUrl": "https://www.youtube.com/embed/eRwV1k-abZo?si=6p-s6UOhRWBWclqT"
         },
         {
             "rank": 4, 
+            "graph": "/images/redgraph.png", 
             "id": "iamahuman", 
             "title": "Superman", 
+            "duration": ["2025", "13" ,"2h 9m"], 
             "rating": 7.6, 
-            "posterUrl": "https://i.ebayimg.com/images/g/SHUAAOSwxb1nYF3J/s-l1200.jpg"
+            "numPeopleRating": "178K", 
+            "tags": ["Superhero", "Action", "Adventure", "Sci-Fi"], 
+            "director": {
+                "directorName": "James Gunn", 
+                "directorId": "jmesGnn"
+            }, 
+            "writer": {
+                "writerName": ["James Gunn", "Jerry Siegel", "Joe Shuster"], 
+                "writerId": ["jmesGnn", "jrrySgL", "joeStEr"]
+            }, 
+            "stars": {
+                "starsName": ["David Corenswet", "Rachel Brosnahan", "Nicholas Hoult]"], 
+                "starsId": ["davdCrSwt", "rchlBrsNH", "nchLasHlt"]
+            }, 
+            "posterUrl": "https://i.ebayimg.com/images/g/SHUAAOSwxb1nYF3J/s-l1200.jpg", 
+            "detail": "Superman must reconcile his alien Kryptonian heritage with his human upbringing as reporter Clark Kent. As the embodiment of truth, justice and the human way he soon finds himself in a world that views these as old-fashioned.", 
+            "videoUrl": "https://www.youtube.com/embed/FVQeKimcpuA?si=mhAd-Vf5sRM_oZgM"
         },
         {
             "rank": 5, 
+            "graph": "/images/greengraph.png", 
             "id": "ffer34rty", 
             "title": "Happy Gilmore", 
             "rating": 7.1, 
-            "posterUrl": "https://m.media-amazon.com/images/M/MV5BMzMyZTM1MTMtNDdjOS00NzIzLTkxY2QtZTU4OGYxOTUwNDMxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+            "duration": ["1996", "PG-13", "1h 32m"], 
+            "numPeopleRating": "279K", 
+            "tags": ["High-Concept Comedy", "Raunchy Comedy", "Slapstick", "Comedy", "Sport"], 
+            "director": {
+                "directorName": "Dennis Dugan", 
+                "directorId": "dnnsDgN"
+            }, 
+            "writer": {
+                "writerName": ["Tim Herlihy", "Adam Sandler"], 
+                "writerId": ["timHlH", "adSler"]
+            }, 
+            "stars": {
+                "starsName": ["Adam Sandler", "Christopher McDonald", "Julie Bowen"], 
+                "starsId": ["adSler", "chTpHMcDn", "jleBwn"]
+            }, 
+            "posterUrl": "https://m.media-amazon.com/images/M/MV5BMzMyZTM1MTMtNDdjOS00NzIzLTkxY2QtZTU4OGYxOTUwNDMxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", 
+            "detail": "After his grandmother's house is repossessed by the IRS, a bad tempered hockey player takes his talents to golf to earn the big bucks and get his grandmothers house back.", 
+            "videoUrl": "https://www.youtube.com/embed/y1emDAYCfVQ?si=7wF4wmnDdIDTJ3iQ"
         },
         {
             "rank": 6, 
+            "graph": "/images/arrow-right.png", 
             "id": "iop3lm4p", 
             "title": "Dexter: Resurrection", 
             "rating": 9.2, 
-            "posterUrl": "https://m.media-amazon.com/images/M/MV5BMzgxNzUwZTctMzliNi00MDUwLWE4YzctNjgwMDE2OWQwNzMxXkEyXkFqcGc@._V1_.jpg"
+            "posterUrl": "https://m.media-amazon.com/images/M/MV5BMzgxNzUwZTctMzliNi00MDUwLWE4YzctNjgwMDE2OWQwNzMxXkEyXkFqcGc@._V1_.jpg", 
+            "duration": ["TV Series", "2025–", "TV-MA"], 
+            "numPeopleRating": "22K", 
+            "tags": ["Crime", "Thriller"], 
+            "director": "", 
+            "creator": {
+                "creatorName": "Clyde Phillips", 
+                "creatorId": "cdePhlpS"
+            }, 
+            "writer": "", 
+            "stars": {
+                "starsName": ["Michael C. Hall", "Uma Thurman", "Jack Alcott"], 
+                "starsId": ["mchlCHlL", "uMaTmn", "jckAcTT"]
+            }, 
+            "detail": "Dexter Morgan awakens from a coma and sets out for New York City, determined to find Harrison and make things right. But when Miami Metro's Angel Batista arrives with questions, Dexter realizes his past is catching up to him fast.", 
+            "videoUrl": "https://www.youtube.com/embed/84o1Q6fB20k?si=PdGrFXFvjfaxUSWh"
         }
     ], 
     "bornToday": [
         {
             "name": "Hailee Steinfeld", 
+            "title": ["Actress", "Producer", "Composer"],
             "age": 27, 
-            "photoUrl": "https://m.media-amazon.com/images/M/MV5BYjg0MjA4OGEtMTc1ZS00ZmJhLTgyYjItMTY4YjI0NjVjNjllXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+            "starmeter1": "/images/redgraph.png", 
+            "starmeter2": "Top 500", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BYjg0MjA4OGEtMTc1ZS00ZmJhLTgyYjItMTY4YjI0NjVjNjllXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+            "id": "hl2est7f", 
+            "detail": "Hailee Steinfeld was born on December 11, 1996 in Tarzana, California, to Cheri (Domasin), an interior designer, and <a href=''>Peter Steinfeld</a>, a personal fitness trainer. She has a brother, Griffin. Her uncle is <a href=''>Jake Steinfeld</a>, a fitness trainer, and her great-uncle is actor <a href=''>Larry Domasin</a>. Her father is of Ashkenazi Jewish descent and her mother's ancestry is Filipino, African-American, British Isles, and German. Hailee was raised in Thousand Oaks, California.", 
+            "personVideoUrl": "https://www.youtube.com/embed/QhYmHrmJcA4?si=pR3f6VQ4ROUX1B5T", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
         }, 
         {
             "name": "Rita Moreno",
             "age": 92, 
-            "photoUrl": "https://m.media-amazon.com/images/M/MV5BMTkyMzI4ODExM15BMl5BanBnXkFtZTcwNjkzNDEzNw@@._V1_FMjpg_UX1000_.jpg"
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BMTkyMzI4ODExM15BMl5BanBnXkFtZTcwNjkzNDEzNw@@._V1_FMjpg_UX1000_.jpg", 
+            "title": ["Actress", "Producer", "Soundtrack"], 
+            "starmeter1": "/images/redgraph.png",
+            "starmeter2": "Top 5000", 
+            "id": "rt9aMrn2o", 
+            "detail": "Rita Moreno is one of the very few performers to win an Oscar, an Emmy, a Tony and a Grammy, thus becoming an EGOT. She was born Rosita Dolores Alverío in the hospital in Humacao, Puerto Rico on December 11, 1931 (but raised in nearby, smaller Juncos, which had no hospital), to seamstress Rosa María (Marcano) and farmer Francisco José 'Paco' Alverío. Her mother moved to New York City in 1937, taking Rita with her while leaving her reportedly unfaithful husband and Rita's younger brother behind.", 
+            "personVideoUrl": "https://www.youtube.com/embed/eQUpTY330TQ?si=NN2ASc1PyI_vZfA7", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
         }, 
         {
             "name": "Gabriel Basso",
             "age": 29, 
-            "photoUrl": "https://m.media-amazon.com/images/M/MV5BZGRkMDg1ZjYtZDAwOS00ODZmLWJkYjUtODEzY2E5OGM3OTkzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BZGRkMDg1ZjYtZDAwOS00ODZmLWJkYjUtODEzY2E5OGM3OTkzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", 
+            "title": ["Actor", "Soundtrack"],
+            "starmeter1": "/images/greengraph.png", 
+            "starmeter2": "Top 5000", 
+            "id": "gB2bsS9o", 
+            "detail": "Gabriel Basso was born on 11 December 1994 in St Louis, Missouri, USA. He is an actor, known for <a href=''>Super 8 (2011)</a>, <a href=''>The Kings of Summer (2013)</a> and <a href=''>Hillbilly Elegy (2020)</a>.", 
+            "personVideoUrl": "https://www.youtube.com/embed/qbgrH2h4jDQ?si=PyHeYpqnVMalnSxI", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
         },
         {
             "name": "Courtney Henggeler",
             "age": 45, 
-            "photoUrl": "https://m.media-amazon.com/images/M/MV5BMDJlODBlYjAtYzQzNC00Y2NkLThhZDktMTVlZTQ5NDdhNjAxXkEyXkFqcGc@._V1_.jpg"
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BMDJlODBlYjAtYzQzNC00Y2NkLThhZDktMTVlZTQ5NDdhNjAxXkEyXkFqcGc@._V1_.jpg", 
+            "title": ["Actress", "Writer", "Producer"],
+            "starmeter1": "/images/redgraph.png", 
+            "starmeter2": "Top 5000", 
+            "id": "crt4n5HgL", 
+            "detail": "Courtney Henggeler is an actress, model and singer. As a child she was definitely theatrical. She took acting lessons in LA. Her first audition was for her high school's production of 'Carousel' when she was in 9th grade. She pretended to eat an apple while singing about clams. Her debut was as Susan Beth in the film <a href=''>The Bog Creatures (2003)</a>. Though her television debut was in <a href=''>House M.D. (2004)</a> (2005), she was popular as Missy Cooper in CBS sitcom <a href=''>The Big Bang Theory (2007)</a> in 2008.", 
+            "personVideoUrl": "https://www.youtube.com/embed/5obEPUfLVZE?si=cGmxRydT70K9neNQ", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
         }, 
         {
             "name": "Donna Mills",
             "age": 83, 
-            "photoUrl": "https://m.media-amazon.com/images/M/MV5BMTRkZGYxNzYtYjcwMC00ZmVlLTllMWQtMTIyNjE2ZDQzMjgzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BMTRkZGYxNzYtYjcwMC00ZmVlLTllMWQtMTIyNjE2ZDQzMjgzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", 
+            "title": ["Actress", "Producer", "Soundtrack"],
+            "starmeter1": "", 
+            "starmeter2": "See Rank", 
+            "id": "don8Mls3", 
+            "detail": "Blonde, buoyant Donna Mills began acting in local amateur and professional productions in her home town of Chicago. Donna made her Broadway bow as a harem girl in <a href=''>Woody Allen</a>'s play 'Don't Drink the Water,' then played recurring roles on the Manhattan-based TV soap operas <a href=''>The Secret Storm (1954)</a> and <a href=''>Love Is a Many Splendored Thing (1967)</a>. Her first film was <a href=''>The Incident (1967)</a>, a hard-hitting drama which co-starred fellow up-and-comers <a href=''>Martin Sheen</a> and <a href=''>Beau Bridges</a>. After playing <a href=''>Clint Eastwood</a>'s imperiled", 
+            "personVideoUrl": "https://www.youtube.com/embed/6dwTVK5AXVo?si=gsMJxRgX7_84q2fH", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
         }, 
         {
             "name": "Max Martini",
             "age": "", 
-            "photoUrl": "https://m.media-amazon.com/images/M/MV5BZmM5M2I2YTUtNGY5ZS00ZjA1LWEyODYtYjViY2UzZTMyMjAzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BZmM5M2I2YTUtNGY5ZS00ZjA1LWEyODYtYjViY2UzZTMyMjAzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", 
+            "title": ["Actor", "Producer", "Director"],
+            "starmeter1": "/images/greengraph.png", 
+            "starmeter2": "Top 5000", 
+            "id": "mx0Mtn0I", 
+            "detail": "Maximilian Carlo Martini was born in New York to an Italian father and an American mother. He is a citizen of the United States, Canada, and Italy and speaks Italian fluently. His Roman father was a sculptor and Doctor of Philosophy and Phenomenology and instilled in him an appreciation for all things creative. His mother was a Texas law enforcement officer. After moving around a bit as a child, Martini made his way back to New York City and began to study acting. He started out at the Neighborhood Playhouse intensiv", 
+            "personVideoUrl": "https://www.youtube.com/embed/xb3amV1fsZI?si=Gf0b90Os7HeSYSuN", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }
+    ], 
+    "otherPerson": [
+        {
+            "name": "Kyle Newacheck", 
+            "age": "41", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BMTA5MDE3MjQyNDBeQTJeQWpwZ15BbWU4MDAwOTM1NzAx._V1_UY200_CR82,0,136,200_.jpg", 
+            "title": ["Producer", "Writer", "Director"], 
+            "starmeter1": "/images/greengraph.png", 
+            "starmeter2": "Top 500", 
+            "id": "kl4NwAchk1", 
+            "detail": "Kyle Newacheck was born on 23 January 1984 in Walnut Creek, California, USA. He is a producer and writer, known for <a href=''>Game Over, Man! (2018)</a>, <a href=''>Stranger in the Woods (2024)</a> and <a href=''>Workaholics (2011)</a>.", 
+            "personVideoUrl": "https://www.youtube.com/embed/ec603bz3ggY?si=zE6eyzOaSLgMyT18", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Tim Herlihy", 
+            "age": "58", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BODYyNDg2NzQ5Ml5BMl5BanBnXkFtZTgwMjcxNzM2NzE@._V1_FMjpg_UX1000_.jpg", 
+            "title": ["Writer", "Producer", "Actor"], 
+            "starmeter1": "/images/greengraph.png", 
+            "starmeter2": "Top 500", 
+            "id": "timHlH", 
+            "detail": "Tim Herlihy was born on 9 October 1966 in Brooklyn, New York, USA. He is a writer and producer, known for <a href=''>The Wedding Singer (1998)</a>, <a href=''>Pixels (2015)</a> and <a href=''>Saturday Night Live (1975)</a>.", 
+            "personVideoUrl": "https://www.youtube.com/embed/aSWbOsBKIuc?si=8s6s0jdYF3_BRz93", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Adam Sandler", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BNjk5Mzg3NzkxM15BMl5BanBnXkFtZTgwOTE4NDU3NTM@._V1_FMjpg_UX1000_.jpg", 
+            "title": ["Actor", "Producer", "Writer"], 
+            "starmeter1": "/images/greengraph.png", 
+            "starmeter2": "10", 
+            "id": "adSler", 
+            "detail": "Adam Richard Sandler was born September 9, 1966 in Brooklyn, New York, to Judith (Levine), a teacher at a nursery school, and Stanley Alan Sandler, an electrical engineer. He is of Russian Jewish descent. At 17, he took his first step towards becoming a stand-up comedian when he spontaneously took the stage at a Boston comedy club. He found he was a natural comic. He nurtured his talent while at New York University (graduating with a Bachelor of Fine Arts degree in 1991) by performing regularly in clubs and at universities. During his freshman year, he snagged a recurrin", 
+            "personVideoUrl": "https://www.youtube.com/embed/j-R5M2_gbEc?si=xgmVpe8xqgCkbYPu", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Julie Bowen", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BMjIxMjI3ODI5M15BMl5BanBnXkFtZTcwNjIyNTA0NA@@._V1_.jpg", 
+            "title": ["Actress", "Producer", "Director"], 
+            "starmeter1": "/images/greengraph.png", 
+            "starmeter2": "8", 
+            "id": "jleBwn", 
+            "detail": "Julie Bowen was born in Baltimore, Maryland, and is the middle daughter of Suzanne and John Luetkemeyer Jr., a real estate developer. Her early education was at Calvert School in Baltimore, and Garrison Forest School, Maryland. She moved on to St. George's School, Rhode Island and then attended Brown University, graduating with a BA in Renaissance Studies.", 
+            "personVideoUrl": "https://www.youtube.com/embed/j-R5M2_gbEc?si=xgmVpe8xqgCkbYPu", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Christopher McDonald", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BNzExMTRlMzktYzEzYS00N2I0LWE4OWUtZTI2ZTJlNTM1YzAzXkEyXkFqcGc@._V1_CR174,55,457,685_FMjpg_UX1000_.jpg", 
+            "title": ["Actor", "Producer", "Director"], 
+            "starmeter1": "/images/greengraph.png", 
+            "starmeter2": "25", 
+            "id": "chTpHMcDn", 
+            "detail": "<a href=''>Christopher McDonald</a> was born and raised in New York City, New York, to Patricia, a real estate agent, and James R. McDonald, an educator. His breakout role was in <a href=''>Ridley Scott</a>'s <a href=''>Thelma & Louise (1991)</a>, followed shortly by his role as Jack Barry in <a href=''>Robert Redford</a>'s <a href=''>Quiz Show (1994)</a>. Other notable performances include <a href=''>Into Thin Air: Death on Everest (1997)</a> as Jon Krakauer and <a href=''>Requiem for a Dream (2000)</a> as Tappy Tibbons (opposite Oscar winner <a href=''>Ellen Burstyn</a>). He co-starred in <a href=''>Happy Gilmore (1996)</a>, <a href=''>American Pie Presents: The Naked Mile (2006)</a>", 
+            "personVideoUrl": "https://www.youtube.com/embed/j-R5M2_gbEc?si=xgmVpe8xqgCkbYPu", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Matt Shakman", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BODUwY2E2MmYtMTdiYy00MGU5LTljMWYtZWI5MzQ4N2UxM2Y2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", 
+            "title": ["Director", "Producer", "Actor"], 
+            "starmeter1": "/images/greengraph.png", 
+            "starmeter2": "41", 
+            "id": "mttSkMn", 
+            "detail": "Matt Shakman was born on 8 August 1975. He is a director and producer, known for <a href=''>WandaVision (2021)</a>, <a href=''>Game of Thrones (2011)</a> and The Great (2020). He has been married to <a href=''>Maggie Malone</a> since 8 October 2012. They have one child.", 
+            "personVideoUrl": "https://www.youtube.com/embed/eNhcwAV-UAI?si=N9laKvQVmbcLabK0", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Josh Friedman", 
+            "age": "", 
+            "photoUrl": "https://images.mubicdn.net/images/cast_member/48824/cache-246033-1502587137/image-w856.jpg", 
+            "title": ["Writer", "Producer"], 
+            "starmeter1": "/images/greengraph.png", 
+            "starmeter2": "Top 5000", 
+            "id": "jshFriMn", 
+            "detail": "Josh Friedman is known for <a href=''>Kingdom of the Planet of the Apes (2024)</a>, <a href=''>The Fantastic Four: First Steps (2025)</a> and <a href=''>War of the Worlds (2005)</a>. He has been married to Christine Albrecht-Buehler since 4 August 2002. They have one child.", 
+            "personVideoUrl": "https://www.youtube.com/embed/pAsmrKyMqaA?si=TP1H5UQcm6kdyLRL", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Eric Pearson", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BMDEwYTk4NDgtYmU3Ny00YjMzLTk1YmItMDJkMjY3MDNlZDVkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", 
+            "title": ["Writer", "Script and Continuity Department", "Producer"], 
+            "starmeter1": "/images/greengraph.png", 
+            "starmeter2": "Top 5000", 
+            "id": "ericPsn", 
+            "detail": "Eric Pearson is known for <a href=''>Thor: Ragnarok (2017)</a>, <a href=''>Black Widow (2021)</a> and <a href=''>Thunderbolts* (2025)</a>.", 
+            "personVideoUrl": "https://www.youtube.com/embed/o9vIJdXLePE?si=34eytMQyvxw_nRSu", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Jeff Kaplan", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BODkwNzFlZTUtNTNlZS00YjJmLTkzY2EtMDBmOTc4NWQ1ZjUzXkEyXkFqcGc@._V1_QL75_UY207_CR86,0,140,207_.jpg", 
+            "title": ["Actor", "Director"], 
+            "starmeter1": "", 
+            "starmeter2": "See Rank", 
+            "id": "jffKpLn", 
+            "detail": "Jeff Kaplan is known for <a href=''>Cobra Kai (2018)</a>, <a href=''>Meet the Browns (2009)</a> and <a href=''>Left Side of Memory (2021)</a>.", 
+            "personVideoUrl": "https://www.youtube.com/embed/VcDb-nh1FFM?si=fPX-iWmoc0keY3Ae", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Pedro Pascal", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BZWNlYmQ3MzctNTM4OC00Mjk5LTlmM2EtNTU4MjgxMjNiZGEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", 
+            "title": ["Actor", "Producer", "Soundtrack"], 
+            "starmeter1": "/images/greengraph.png", 
+            "starmeter2": "12", 
+            "id": "pdroPsCl", 
+            "detail": "Pedro Pascal is a Chilean-born actor. He is best known for portraying the roles of Oberyn Martell in the fourth season of the HBO series <a href=''>Game of Thrones (2011)</a>, Javier Peña in the Netflix series <a href=''>Narcos (2015)</a>, the titular character in the Disney+ series <a href=''>The Mandalorian (2019)</a> and Joel Miller in the HBO series <a href=''>The Last of Us (2023)</a>. He's long-time friends with <a href=''>Triple Frontier (2019)</a> co-star <a href=''>Oscar Isaac</a>.", 
+            "personVideoUrl": "https://www.youtube.com/embed/18QQWa5MEcs?si=ZHjE4PoCOWpnkD7A", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Vanessa Kirby", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BZTgyMDhmYWUtZWUzZS00ODBiLWIyMzctMTM3ODZlNmU0ZTg1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", 
+            "title": ["Actress", "Producer", "Soundtrack"], 
+            "starmeter1": "/images/greengraph.png", 
+            "starmeter2": "6", 
+            "id": "vnsKirBy", 
+            "detail": "Vanessa Kirby is an English stage, TV, and film actress. From 2016 to 2018, Kirby portrayed Princess Margaret in <a href=''>Peter Morgan</a>'s Netflix series <a href=''>The Crown (2016)</a>, for which she won the BAFTA Award for Best Actress in a Supporting Role in a Television Series in 2018. She starred as Estella in the BBC adaptation of Great Expectations, Joanna in <a href=''>Richard Curtis</a>' romantic comedy <a href=''>About Time (2013)</a> and <a href=''>Mission: Impossible - Fallout (2018)</a>.", 
+            "personVideoUrl": "https://www.youtube.com/embed/cHrbSiwHF6Q?si=cYI3jiR4hEFpRumU", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Ebon Moss-Bachrach", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BZGQ2NzYzMzMtYjQxNy00MDI1LTkxODMtMDhkNjg0YjQ5MzIxXkEyXkFqcGc@._V1_QL75_UY207_CR86,0,140,207_.jpg", 
+            "title": ["Actor", "Soundtrack"], 
+            "starmeter1": "/images/greengraph.png", 
+            "starmeter2": "26", 
+            "id": "ebNmSSbchR", 
+            "detail": "Ebon Moss-Bachrach is an American actor best known for playing the role of David Lieberman in <a href=''>The Punisher (2017)</a> and Desi Harperin in <a href=''>Girls (2012)</a>. He was born in Amherst, Massachusetts, and is the son of Renee Moss and Eric Bachrach, who run a music school in Springfield, Massachusetts. He attended high school at Amherst Regional High School in Massachusetts and graduated from Columbia University in 1999.", 
+            "personVideoUrl": "https://www.youtube.com/embed/AzMo-FgRp64?si=h-oHTbmEqvvQ28b4", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Eric Bana", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BODQ1ZDc2NWYtNzI0Yi00YTllLTgyMGQtZjMwNDcyOGE4OWQ5XkEyXkFqcGc@._V1_.jpg", 
+            "title": ["Actor", "Writer", "Producer"], 
+            "starmeter1": "/images/greengraph.png", 
+            "starmeter2": "5", 
+            "id": "ercBN", 
+            "detail": "Eric Bana was born Eric Martin Andrew Banadinovic on August 9, 1968, in Melbourne, Victoria, Australia. He is the younger of two brothers. His father, named Ivan Banadinovic, came from Zagreb, Croatia, and worked as a manager for Caterpillar Inc. His mother, named Eleanor Banadinovic, came from a German family and was a hairdresser.", 
+            "personVideoUrl": "https://www.youtube.com/embed/VubvW5f6kro?si=VhZQgSsBcE6bw-0G", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Sam Neill", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BYzQ1MTM1MTYtNmIxMi00NzNiLTljNTYtMjM5MDg1Y2MzM2M1XkEyXkFqcGc@._V1_.jpg", 
+            "title": ["Actor", "Producer", "Director"], 
+            "starmeter1": "/images/greengraph.png", 
+            "starmeter2": "23", 
+            "id": "samNill", 
+            "detail": "Sam Neill was born in Omagh, Co. Tyrone, Northern Ireland, to army parents, an English mother, Priscilla Beatrice (Ingham), and a New Zealand-born father, Dermot Neill. His family moved to the South Island of New Zealand in 1954. He went to boarding schools and then attended the universities at Canterbury and Victoria. The 6-foot tall star has a BA in English Literature. Following his graduation, he worked with the New Zealand Players and other theater groups.", 
+            "personVideoUrl": "https://www.youtube.com/embed/4Bi0n04pm3A?si=pEu_yqIQ0qtbUoeq", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Rosemarie DeWitt", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BMTMxMTg3ODA5M15BMl5BanBnXkFtZTcwOTA1NzQyMg@@._V1_FMjpg_UX1000_.jpg", 
+            "title": ["Actress", "Additional Crew"], 
+            "starmeter1": "/images/greengraph.png", 
+            "starmeter2": "16", 
+            "id": "rseMrDwtt", 
+            "detail": "Rosemarie Braddock DeWitt, who is also known as Rosemarie DeWitt, is one of the most popular American actresses. She was born on October 26, 1971 in Flushing, Queens that lies in New York, USA. Her parents are Rosemarie Baddock and Kenny DeWitt. She has been featured in various roles in a number of movies and TV shows. She was raised in Hanover Township, New Jersey and she graduated from Whippany Park High School. She also used to perform in many high school productions.", 
+            "personVideoUrl": "https://www.youtube.com/embed/75K5LjY287k?si=_b7Z6ZOkav86m8nm", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "James Gunn", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BMTYxMDgzMjA5OV5BMl5BanBnXkFtZTcwMzMwMTUxNw@@._V1_FMjpg_UX1000_.jpg", 
+            "title": ["Writer", "Producer", "Director"], 
+            "starmeter1": "/images/redgraph.png", 
+            "starmeter2": "36", 
+            "id": "jmesGnn", 
+            "detail": "James Gunn was born and raised in St. Louis, Missouri, to Leota and James Francis Gunn. He is from a large Catholic family, with Irish and Czech ancestry. His father and his uncles were all lawyers. He has been writing and performing as long as he can remember. He began making 8mm films at the age of twelve. Many of these were comedic splatter films featuring his brothers being disemboweled by zombies.", 
+            "personVideoUrl": "https://www.youtube.com/embed/WsvWDzpH0U4?si=uTGc_tQSvPGkhhmW", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Jerry Siegel", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BMmMyMzgyYzUtZTI4OS00MjI1LTgxYjYtNWRkYzM2MmU2ZGIzXkEyXkFqcGc@._V1_.jpg", 
+            "title": ["Writer", "Additional Crew", "Art Department"], 
+            "starmeter1": "", 
+            "starmeter2": "See Rank", 
+            "id": "jrrySgL", 
+            "detail": "Jerry Siegel was born in Cleveland, Ohio. In 1931, he met and befriended his future partner, Joe Shuster, when the latter moved from his birthplace in Canada. Siegel and Shuster were both avid science fiction fans, publishing a fanzine in the mid-1920s. It was during this period that they read Philip Wylie's book, 'Gladiator', about a mysterious character with superpowers and invulnerability. They created a strip for their fanzine (Shuster drawing, Siegel writing) featuring a super-powered villian, but later made him into a hero.", 
+            "personVideoUrl": "https://www.youtube.com/embed/oTXrl8H6luI?si=Uim3DkZCtqDy_X18", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Joe Shuster", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BNGY4N2Y4ZjEtMDgwOS00NDYwLWExN2UtMzU0NGMxNWJjYTk1XkEyXkFqcGc@._V1_.jpg", 
+            "title": ["Writer", "Additional Crew", "Art Department"], 
+            "starmeter1": "", 
+            "starmeter2": "See Rank", 
+            "id": "joeStEr", 
+            "detail": "Joe Shuster was born in Toronto, Ontario, Canada. At age 9 he and his family moved to Cleveland, Ohio, where he met and befriended his future partner Jerome 'Jerry' Siegel. Siegel and Shuster were both avid science fiction fans, publishing a fanzine in the mid-1920s. It was during this period that they read Philip Wylie's book, 'Gladiator', about a mysterious character with superpowers and invulnerability. They created a strip for their fanzine (Shuster drawing, Siegel writing) featuring a super-powered villain, but later made him into a hero.", 
+            "personVideoUrl": "https://www.youtube.com/embed/oTXrl8H6luI?si=Uim3DkZCtqDy_X18", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "David Corenswet", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BMTFmZTY1MDgtMGZlOS00NGFlLWIxOTEtZTk4NTQ2NTM2MGE0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", 
+            "title": ["Actor", "Writer", "Producer"], 
+            "starmeter1": "/images/redgraph.png", 
+            "starmeter2": "9", 
+            "id": "davdCrSwt", 
+            "detail": "Perhaps best known for playing Superman in the DCU, David Packard Corenswet is a native of Philadelphia, Pennsylvania. His parents, Caroline Packard and John Corenswet, were lawyers, and his father also worked as a stage actor in New York for many years. His grandfather, <a href=''>Edward Packard</a>, is an author and the creator of the Choose Your Own Adventure book series. His father was from a Jewish family long-settled in New Orleans, Louisiana, and his mother was from a Quaker household.", 
+            "personVideoUrl": "https://www.youtube.com/embed/kKy6p5dYkqs?si=zcVaZwidfv3fQTFQ", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Rachel Brosnahan", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BODIyMzA1MjEyOF5BMl5BanBnXkFtZTgwMTAyNDgyNzM@._V1_.jpg", 
+            "title": ["Actress", "Producer", "Executive"], 
+            "starmeter1": "/images/redgraph.png", 
+            "starmeter2": "13", 
+            "id": "rchlBrsNH", 
+            "detail": "Rachel Brosnahan was born in in Milwaukee, Wisconsin in 1990 and is an American actress. She is best known for her role as 'Midge' Maisel in the Amazon Prime Video series <a href=''>The Marvelous Mrs. Maisel (2017)</a> for which she has won two Golden Globes for Best Performance by an Actress in a Television Series - Musical or Comedy (2019, 2018), one Emmy for Outstanding Lead Actress in a Comedy Series (2018), and one Critics' Choice Award for Best Actress in a Comedy Series (2018).", 
+            "personVideoUrl": "https://www.youtube.com/embed/kKy6p5dYkqs?si=zcVaZwidfv3fQTFQ", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Nicholas Hoult", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BZDE2YjY4ODUtZjVmMy00ZmE2LTgwZjgtMWJiZGI0NWY3ODAzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", 
+            "title": ["Actor", "Producer", "Executive"], 
+            "starmeter1": "/images/redgraph.png", 
+            "starmeter2": "18", 
+            "id": "nchLasHlt", 
+            "detail": "Nicholas Hoult was born on December 7, 1989 in Wokingham, Berkshire, England, UK as Nicholas Caradoc Hoult. His parents are <a href=''>Glenis Hoult</a>, a piano teacher and Roger Hoult, a pilot. He has three siblings, two sisters and one brother. His great-aunt was one of the most popular actresses of her time, Dame <a href=''>Anna Neagle</a>. He attended Sylvia Young Theatre School, a school for performing arts, to start acting as a career.", 
+            "personVideoUrl": "https://www.youtube.com/embed/kKy6p5dYkqs?si=zcVaZwidfv3fQTFQ", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Dennis Dugan", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BYmViNDJlYWItYTc2MS00OGRiLTlmNTctMjI3NWRlYzRjNDFkXkEyXkFqcGc@._V1_.jpg", 
+            "title": ["Actor", "Director", "Writer"], 
+            "starmeter1": "/images/greengraph.png", 
+            "starmeter2": "Top 500", 
+            "id": "dnnsDgN", 
+            "detail": "Dennis Barton Dugan is an American film director, actor, comedian and screenwriter from Wheaton, Illinois who directed several films featuring Adam Sandler including Happy Gilmore, Big Daddy, Jack & Jill, Grown Ups, I Now Pronounce You Chuck & Larry and You Don't Mess With the Zohan. He also directed Beverly Hills Ninja and The Benchwarmers.", 
+            "personVideoUrl": "https://www.youtube.com/embed/n0yThIOIYqg?si=jviOpJFqPnYNVNUo", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Clyde Phillips", 
+            "age": "", 
+            "photoUrl": "https://fr.web.img4.acsta.net/c_310_420/pictures/21/11/12/18/47/1635511.jpg", 
+            "title": ["Producer", "Writer", "Additional Crew"], 
+            "starmeter1": "", 
+            "starmeter2": "See Rank", 
+            "id": "cdePhlpS", 
+            "detail": "Clyde Phillips is known for <a href=''>Dexter (2006)</a>, <a href=''>Dexter: Original Sin (2024)</a> and <a href=''>Dexter: Resurrection (2025)</a>.", 
+            "personVideoUrl": "https://www.youtube.com/embed/00w9XDjYbpg?si=t76sWRnKDjnm54Lr", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Michael C. Hall", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BNDYwMzkwNjc0Ml5BMl5BanBnXkFtZTcwMDU1NTMzNw@@._V1_FMjpg_UX1000_.jpg", 
+            "title": ["Actor", "Producer", "Director"], 
+            "starmeter1": "/images/redgraph.png", 
+            "starmeter2": "Top 500", 
+            "id": "mchlCHlL", 
+            "detail": "Michael C. Hall was born in Raleigh, North Carolina, to Janice (Styons), a guidance counselor, and William Carlyle Hall, who worked for IBM. Michael is a graduate of NYU's Master of Fine Arts program in acting. He is known for the titular character 'Dexter' in <a href=''>Dexter (2006)</a> and as mortician 'David Fisher' in <a href=''>Six Feet Under (2001)</a>. His most recent performance on Broadway was as 'Hedwig' in 'Hedwig and the Angry Inch'. Previously, Hall portrayed the emcee in 'Cabaret', 'Billy Flynn' in 'Chicago' and 'John Jones' in 'The Realistic Joneses'.", 
+            "personVideoUrl": "https://www.youtube.com/embed/w_OHsYT9r0M?si=VcXiacREyy7iohsb", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Uma Thurman", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BMjMxNzk1MTQyMl5BMl5BanBnXkFtZTgwMDIzMDEyMTE@._V1_FMjpg_UX1000_.jpg", 
+            "title": ["Actress", "Producer", "Writer"], 
+            "starmeter1": "/images/redgraph.png", 
+            "starmeter2": "Top 500", 
+            "id": "uMaTmn", 
+            "detail": "Uma Karuna Thurman was born in Boston, Massachusetts, into a highly unorthodox and internationally minded family. She is the daughter of <a href=''>Nena Thurman</a> (née Birgitte Caroline von Schlebrügge), a fashion model and socialite who now runs a mountain retreat, and of <a href=''>Robert Thurman</a> (Robert Alexander Farrar Thurman), a professor and academic who is one of the nation's foremost Buddhist scholars. Uma's mother was born in Mexico City, Mexico, to a German father and a Swedish mother (who herself was of Swedish, Danish, and German descent).", 
+            "personVideoUrl": "https://www.youtube.com/embed/ZJwn9jSoFIE?si=sFyvyZATlMqaJN_I", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
+        }, 
+        {
+            "name": "Jack Alcott", 
+            "age": "", 
+            "photoUrl": "https://m.media-amazon.com/images/M/MV5BZDQxYTgzZWEtYmMxMy00YzYxLTlmMWQtYjFjNDcyNWIyMzIxXkEyXkFqcGc@._V1_.jpg", 
+            "title": ["Actor"], 
+            "starmeter1": "/images/redgraph.png", 
+            "starmeter2": "Top 5000", 
+            "id": "jckAcTT", 
+            "detail": "Jack Alcott was born on 24 October 1996 in Nashville, Tennessee, USA. He is an actor, known for <a href=''>Dexter: New Blood (2021)</a>, <a href=''>The Good Lord Bird (2020)</a> and <a href=''>บัญชีดำอาชญากรรมซ่อนเงื่อน (2013)</a>.", 
+            "personVideoUrl": "https://www.youtube.com/embed/84o1Q6fB20k?si=8ahW3LG75KbnaQQ8", 
+            "moreAt": ["Contact info", "Agent info", "Resume"]
         }
     ]
 }

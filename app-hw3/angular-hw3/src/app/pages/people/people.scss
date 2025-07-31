@@ -1,0 +1,192 @@
+.detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;     /* เรียงหัวเรื่อง + การ์ดจากบนลงล่าง */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: #1A1A1A;
+  transition: transform 0.2s ease;
+//   width: 200px;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* สำคัญ! ให้ลูกซ้อนตามกรอบการ์ด */
+  overflow: hidden;    /* กัน Ribbon ล้น */
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.duration-list {
+  display: flex;
+  flex-direction: row;  // สำคัญ
+  gap: 10px;            // ถ้าอยากให้ห่าง
+  color: #B4B4B4;
+  margin-top: -30px;
+}
+
+.ribbon-image {
+  position: absolute;
+  margin-top: -5px;
+  margin-left: -11px;
+  width: 50px;    /* ปรับขนาดตามภาพจริง */
+  height: auto;   /* รักษาอัตราส่วน */
+  z-index: 2;     /* ให้ซ้อนบนโปสเตอร์ */
+  opacity: 0.7;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.ribbon-image:hover {
+    transform: scale(1.2);
+}
+
+iframe {
+    border-radius: 20px;
+}
+
+.info-card {
+  background: #222;
+  color: #fff;
+  border-radius: 8px;
+  width: 202px;
+  height: 202px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info-card mat-icon {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+}
+
+.imgVdoBox {
+    display: flex;
+    flex-direction: row;  // สำคัญ
+    gap: 10px;            // ถ้าอยากให้ห่าง
+}
+
+.tag-button {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.tag-button button {
+    border-radius: 20px;
+    font-size: 12px;
+    min-width: auto;   // สำคัญที่สุด
+    padding: 4px 12px;
+    line-height: 1.2;        // สูงพอดี
+    transition: background 0.3s, color 0.3s; // ลื่นๆ
+}
+
+.tag-button button :hover {
+    background: #3a3939;
+}
+
+.line {
+  border: none;
+  height: 1px;        // ความหนา
+  background: #494949;   // สีขีด
+  width: 100%;        // ยาวเต็มความกว้าง
+  margin-top: -10px;
+  margin-bottom: -10px;
+  margin-left: 0;
+}
+
+.dot-spacing1 {
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+.dot-spacing2 {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 10px;
+}
+
+.person-link {
+    color: #4879B8;
+    text-decoration: none;
+}
+
+.head-component {
+    display: flex;
+    flex-direction: row;
+}
+
+.right-header {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-left: auto;    /* ดันไปชิดขวา */
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.rating-btn {
+  display: inline-flex;       // ✅ ให้ปุ่มหดตามเนื้อหา
+  flex-direction: column;     // ✅ จัดแนว column ถ้าอยากให้มี 2 บรรทัด
+  align-items: center;        // ✅ จัดกลาง
+  min-width: auto;            // ✅ ยกเลิก min-width ของ Material
+  padding: 8px 12px;          // ✅ ปรับ padding ตามต้องการ
+  border-radius: 20px;
+  margin-top: -8px;
+}
+
+.rating-display {
+  display: flex;
+  align-items: center;
+  gap: 5px;                   // ระยะห่างระหว่างรูปกับตัวเลข
+}
+
+.rating-people {
+  font-size: 12px;
+  margin-top: -12px;
+  margin-left: 2px;
+}
+
+.detail-box {
+  width: 800px;
+}
+
+.image-cover {
+    object-fit: cover;
+}
+
+.action-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  margin-left: 80px;
+  margin-top: 35px;
+}
+
+.watchlist-button {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: #f5c518;
+  color: #000;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 12px;
+  min-width: 355px;
+}
