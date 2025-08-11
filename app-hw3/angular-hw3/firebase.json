@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "public": "dist/angular-hw3/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      { "source": "**", "destination": "/index.html" }
+    ]
+  }
+}
