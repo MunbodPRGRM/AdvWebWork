@@ -1,0 +1,17 @@
+@if (router.url === '/') {
+<mat-toolbar class="custom-toolbar"></mat-toolbar>
+} @else {
+<mat-toolbar class="custom-toolbar">
+  <img src="/assets/Images/logo.png" alt="logo" class="logo">
+
+  <div class="title">
+    <h1>Cafe Amazon @CS-MSU</h1>
+    <h1>Cafe Amazon @CS-MSU</h1>
+  </div>
+
+  <span class="spacer"></span>
+
+  <button mat-flat-button color="warn" (click)="logout()">ออกจากระบบ</button>
+</mat-toolbar>
+
+}

@@ -1,0 +1,25 @@
+.fullscreen-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999; /* เพื่อให้ card อยู่เหนือ toolbar */
+}
+
+mat-card {
+  width: 350px;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-title-center {
+  text-align: center;
+  width: 100%;
+}
+
+mat-card-header {
+  display: flex;
+  justify-content: center;
+}

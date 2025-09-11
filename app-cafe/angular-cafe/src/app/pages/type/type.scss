@@ -1,0 +1,23 @@
+.menu-card {
+  width: 800px;         /* ปรับขนาดการ์ดให้ใหญ่ขึ้น */
+  margin: auto;    /* จัดให้อยู่กลาง */
+  margin-top: -100px;
+  background: transparent;   /* โปร่งใส */
+  box-shadow: none;     /* เอาเงาออก ถ้าอยากให้โปร่งใสจริง ๆ */
+}
+
+.menu-card img {
+  width: 100%;          /* รูปเต็มการ์ด */
+  height: auto;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: center; /* ปุ่มเรียงสวย ๆ */
+  margin-top: 20px;
+}
+
+button {
+  font-size: 1.2rem;    /* ปุ่มใหญ่ขึ้น */
+  padding: 10px 20px;
+}

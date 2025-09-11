@@ -1,0 +1,7 @@
+<div *ngFor="let coffee of coffeeList" class="coffee-card">
+  <h3>{{ coffee.ProductName }} ({{ coffee.TypeProduct.TypeName }})</h3>
+  <img [src]="'assets/Images/' + coffee.Image" alt="{{ coffee.ProductName }}" width="100">
+  <p>{{ coffee.Description }}</p>
+  <p>Type Icon: <img [src]="'assets/Images/' + coffee.TypeProduct.Image" alt="{{ coffee.TypeProduct.TypeName }}" width="24"></p>
+  <hr>
+</div>

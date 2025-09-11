@@ -1,0 +1,20 @@
+<mat-card class="fullscreen-center">
+    <img src="/assets/Images/logo.png" alt="" style="width: 120px; margin: auto; display: block;" />
+    <mat-card-header>
+        <mat-card-title class="card-title-center">ระบบพนักงาน</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form>
+            <mat-form-field appearance="outline" style="width: 100%;">
+                <input matInput placeholder="อีเมล์" type="email" />
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" style="width: 100%;">
+                <input matInput placeholder="รหัสผ่าน" type="password" />
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions style="justify-content: center;">
+        <button mat-flat-button color="primary" style="width: 100%;" (click)="login()">เข้าสู่ระบบ</button>
+    </mat-card-actions>
+</mat-card>

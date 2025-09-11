@@ -11,14 +11,14 @@ export class Trip {
   constructor(private constants : Constants, private http: HttpClient) {}
 
   public async getTrip(options?: any) {
-    const url = this.constants.API_ENDPOINT + '/trips';
+    const url = this.constants.API_ENDPOINT + '/trip';
     const response = await lastValueFrom(this.http.get(url));
 
     return response as TripsGetResponse[];
   }
 
   public async getOneTrip(id: number, options?: any) {
-    const url = this.constants.API_ENDPOINT + '/trips/' + id;
+    const url = this.constants.API_ENDPOINT + '/trip/' + id;
     const response = await lastValueFrom(this.http.get(url));
 
     if (Array.isArray(response)) {
@@ -29,7 +29,7 @@ export class Trip {
   }
 
   public async getTripByName(name: string, options?: any) {
-    const url = this.constants.API_ENDPOINT + '/trips';
+    const url = this.constants.API_ENDPOINT + '/trip';
     const response = await lastValueFrom(this.http.get(url, { params: { name: name }}));
 
     if (Array.isArray(response)) {
@@ -40,7 +40,7 @@ export class Trip {
   }
 
   public async addNewTrip(trip : any, options?: any) {
-    const url = this.constants.API_ENDPOINT + '/trips';
+    const url = this.constants.API_ENDPOINT + '/trip';
     const response = await lastValueFrom(this.http.post(url, trip));
 
     return response;
