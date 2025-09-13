@@ -1,0 +1,38 @@
+/* กล่องหลัก */
+.edit-trip-container {
+  max-width: 600px; /* ✅ ขยายให้ใหญ่ขึ้น */
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* หัวข้อ */
+.form-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ฟอร์ม */
+.full-width {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+/* ปุ่ม */
+.button-group {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button-group button {
+  font-size: 18px;
+  padding: 12px 26px;
+  border-radius: 8px;
+}

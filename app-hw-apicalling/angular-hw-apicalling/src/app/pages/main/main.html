@@ -1,0 +1,53 @@
+<!-- ส่วนค้นหา -->
+<div class="search-container">
+  <!-- ค้นหาด้วย id -->
+  <mat-form-field appearance="outline" class="search-field">
+    <input matInput #id placeholder="ใส่ ID ที่ต้องการค้นหา" />
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="getTripById(id)">ค้นหา</button>
+
+  <!-- ค้นหาด้วยชื่อ -->
+  <mat-form-field appearance="outline" class="search-field">
+    <input matInput #name placeholder="ใส่ชื่อที่ต้องการค้นหา" />
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="getTripByName(name)">ค้นหา</button>
+
+  <!-- ค้นหาด้วยโซน -->
+  <mat-form-field appearance="outline" class="search-field">
+    <mat-label>เลือกปลายทาง</mat-label>
+    <mat-select [(value)]="selectedDestinationZone" (selectionChange)="getTripByDestination()">
+      <mat-option [value]="null">ทั้งหมด</mat-option>
+      <mat-option *ngFor="let d of destinations" [value]="d.name">
+        {{ d.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<!-- ปุ่มเพิ่มทริป -->
+<div class="add-btn-container">
+  <button mat-raised-button color="accent" [routerLink]="['/add']">
+    ➕ เพิ่มทริปใหม่
+  </button>
+</div>
+
+<!-- แสดงผลลัพธ์ -->
+<div class="result-container">
+  <div *ngFor="let trip of trips" class="trip-card">
+    <h3>{{ trip.name }}</h3>
+
+    <!-- ถ้า url ของรูปยังทำงานได้จะแสดงรูปตามปกติ ถ้าไม่ onImageError จะทำงาน -->
+    <img [src]="trip.coverimage" alt="{{ trip.name }}" (error)="onImageError($event)" />
+
+    <!-- แสดงรายละเอียดต่าง ๆ -->
+    <p><strong>โซน:</strong> {{ trip.destination_zone }}</p>
+    <p><strong>ประเทศ:</strong> {{ trip.country }}</p>
+    <p><strong>ระยะเวลา:</strong> {{ trip.duration }}</p>
+    <p><strong>ราคา:</strong> {{ trip.price }}</p>
+
+    <!-- ปุ่มดูรายละเอียด -->
+    <button mat-flat-button color="primary" class="detail-btn" [routerLink]="['/detail', trip.idx]">
+      🔍 ดูรายละเอียด
+    </button>
+  </div>
+</div>
