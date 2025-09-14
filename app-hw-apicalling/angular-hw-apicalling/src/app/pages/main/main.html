@@ -14,11 +14,22 @@
 
   <!-- ค้นหาด้วยโซน -->
   <mat-form-field appearance="outline" class="search-field">
-    <mat-label>เลือกปลายทาง</mat-label>
+    <mat-label>เลือกโซน</mat-label>
     <mat-select [(value)]="selectedDestinationZone" (selectionChange)="getTripByDestination()">
       <mat-option [value]="null">ทั้งหมด</mat-option>
       <mat-option *ngFor="let d of destinations" [value]="d.name">
         {{ d.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <!-- ค้นหาด้วยประเทศ -->
+  <mat-form-field appearance="outline" class="search-field">
+    <mat-label>เลือกประเทศ</mat-label>
+    <mat-select [(value)]="selectedCountry" (selectionChange)="getTripByCountry()">
+      <mat-option [value]="null">ทั้งหมด</mat-option>
+      <mat-option *ngFor="let c of countries" [value]="c.name">
+        {{ c.name }}
       </mat-option>
     </mat-select>
   </mat-form-field>

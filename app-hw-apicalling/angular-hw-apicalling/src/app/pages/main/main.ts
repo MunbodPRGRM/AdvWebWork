@@ -33,8 +33,9 @@ export class Main {
   trips: TripGetResponse[] = [];
   allTrips: TripGetResponse[] = [];
 
-  // ใช้สำหรับเก็บชื่อโซน
+  // ใช้สำหรับเก็บชื่อโซน และชื่อประเทศ
   selectedDestinationZone: string = '';
+  selectedCountry: string = '';
 
   // ไม่ได้เรียกใช้งาน api แต่ประกาศเอง
   destinations: Destinations[] = [
@@ -42,6 +43,24 @@ export class Main {
     { value: 2, name: 'ยุโรป' },
     { value: 3, name: 'เอเชียตะวันออกเฉียงใต้' },
     { value: 9, name: 'ประเทศไทย' },
+  ];
+
+  // ไม่ได้เรียกใช้ api แต่ประกาศเอง
+  countries: Country[] = [
+    { name: 'สวิตเซอร์แลนด์' }, 
+    { name: 'สิงคโปร์' }, 
+    { name: 'เวียดนาม' }, 
+    { name: 'ลาว' }, 
+    { name: 'ไอซ์แลนด์' }, 
+    { name: 'เยอรมันนี' }, 
+    { name: 'ญี่ปุ่น' }, 
+    { name: 'มัลดีฟส์' }, 
+    { name: 'อินเดีย' }, 
+    { name: 'มาเลเซีย' }, 
+    { name: 'ฝรั่งเศส' }, 
+    { name: 'เกาหลี' }, 
+    { name: 'ประเทศไทย' }, 
+    { name: 'จีน' }, 
   ];
 
   // เมื่อเข้ามาที่หน้านี้จะทำงานทันที
@@ -99,6 +118,16 @@ export class Main {
       this.trips = this.allTrips;
     }
   }
+
+  async getTripByCountry() {
+    if (this.selectedCountry) {
+      this.trips = this.allTrips.filter(
+        trip => trip.country === this.selectedCountry
+      );
+    } else {
+      this.trips = this.allTrips;
+    }
+  }
   
   // เอาไว้ใช้เมื่อ url ของรูปใช้งานไม่ได้ (แต่ไม่ได้รองรับ hotlinked)
   onImageError(event: Event) {
@@ -129,5 +158,10 @@ export class Main {
 // ใช้สำหรับการสร้างข้อมูลโซน
 interface Destinations {
   value: number;
+  name: string;
+}
+
+// ใช้สำหรับการสร้างข้อมูลประเทศ
+interface Country {
   name: string;
 }
